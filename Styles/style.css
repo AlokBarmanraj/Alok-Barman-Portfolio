@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Navigation Section */
+header{
+    position: sticky;
+    top: 0;
+    background-color:rgb(207, 224, 240);
+}
+.Navigation-Section{
+    max-width: 1500px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navigation-Section img{
+    width: 95px;
+}
+.Navigation-Section ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+}
+.Navigation-Section ul a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    
+}
+.Navigation-Section ul a:hover{
+    color: brown;
+}
+
+/* commn class */
+.btn{
+    background-color: #004AAD;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    background-color: #1791C8;
+    color: black;
+}
+
+
+/* Hero Section */
+.hero-section{
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 90px ;
+    align-items: center;
+    background-color: white;
+
+}
+.hero-section #hero-header{
+    max-width:800px ;
+}
+.hero-section #hero-header h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.hero-section #hero-header p{
+    font-size: 20px;
+    color: #556070;
+    margin-bottom: 20px;
+}
+.hero-section .hero-img img{
+    width: 530px;
+    vertical-align: middle;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+}
+
+
+/* Professional User Experience Designer */
+.professional{
+    background-color: #F0F1F3;
+    margin-bottom: 90px;
+    padding: 70px 0;
+}
+.experience-designer{
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+}
+.experience-designer .experience{
+    padding: 70px 120px 130px 120px;
+}
+.experience-designer .experience img{
+    max-width: 350px;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+    background-color: #adbfda;
+}
+.experience-designer .experience .fa-icon{
+    text-align: center;
+    font-size: 25px;
+    color: #004AAD;
+    cursor: pointer;
+}
+.fa-icon i:hover{
+    color: #1791C8;
+}
+.experience-designer .experience-header{
+    max-width: 800px;
+}
+.experience-designer .experience-header h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #132238;
+}
+.experience-designer .experience-header p{
+    font-size: 20px;
+    color: #556070;
+    margin-bottom: 20px;
+}
+.my-btn{
+    background-color: #bcbfc2;
+    border: 1px solid#004AAD;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #004AAD;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.my-btn:hover{
+    background-color: #1791C8;
+    color: white;
+}
+
+
+/* My Skill */
+#my-skill-bgc{
+    background-color: #132238;
+    margin: 90px 0 90px;
+}
+.my-skill{
+    max-width: 1500px;
+    margin: 0 auto  ;
+}
+#my-skill-bgc .my-skill .Skill-header h1{
+    font-size:60px;
+    color: white;
+    padding: 50px 0 20px 0;
+}
+#my-skill-bgc .my-skill .Skill-header p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+#my-skill-bgc .my-skill .skill-name{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+#my-skill-bgc .my-skill .skill-name h2{
+    border :1px solid white;
+    width: 740px;
+    border-radius: 15px;
+    padding: 10px 5px;
+    background-color: white;
+}
+
+
+/* Work Process */
+.work-process-bgc{
+    margin: 0 0 90px;
+    background-color: #F0F1F3;
+}
+.work-process-bgc .work-process{
+    max-width: 1500px;
+    padding: 70px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work-process-bgc .work-process .work-process-header{
+    max-width: 550px;
+}
+.work-process-bgc .work-process .work-process-header h2{
+    font-size: 60px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.work-process-bgc .work-process .work-process-header p{
+    font-size: 20px;
+    color: #697484;
+}
+.work-process-bgc .work-process .work-process-card{
+    display: flex;
+    gap: 20px;
+}
+.work-process-bgc .work-process .work-process-card .card-icon{
+    max-width: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: #004AAD;
+    border-radius: 5px;
+    color: rgb(220, 217, 217);
+    margin-bottom: 20px;
+}
+.work-process-bgc .work-process .work-process-card h3{
+    font-size: 30px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.work-process-bgc .work-process .work-process-card p{
+    font-size: 17px;
+    color: #556070;
+}
+.work-process-bgc .work-process .work-process-card .card{
+    max-width: 400px;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+
+
+/* portfolio */
+.portfolio{
+    max-width: 1500px;
+    margin: 0 auto 90px;
+}
+.portfolio .portfolio-header{
+    text-align: center;
+}
+.portfolio .portfolio-header h1{
+    font-size: 70px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.portfolio .portfolio-header p{
+    font-size: 20px;
+    color: #87909D;
+    margin-bottom: 70px;
+}
+.portfolio .portfolio-card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.portfolio .portfolio-card-list .design-card{
+    max-width: 480px;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+}
+.portfolio .portfolio-card-list .design-card img{
+    max-width: 480px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.portfolio .portfolio-card-list .design-card .design-card-header{
+    padding: 20px 10px 30px 20px;
+}
+.portfolio .portfolio-card-list .design-card .design-card-header h3{
+    font-size: 25px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.portfolio .portfolio-card-list .design-card .design-card-header p {
+    font-size: 17px;
+    color: #556070;
+    margin-bottom: 20px;
+}
+
+
+/* Projerct Discuss */
+.design-card-btn{
+text-align: center;
+}
+.projerct-discuss{
+   margin-bottom: 90px;
+   background-color: #132238;
+   text-align: center;
+   padding: 60px 0 60px 0;
+}
+.projerct-discuss .discuss-header h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+}
+.projerct-discuss .discuss-header p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Blog  */
+.blog{
+    max-width: 1500px;
+    margin: 0 auto 90px;
+}
+.blog .blog-header{
+    text-align: center;
+}
+.blog .blog-header h1{
+    font-size: 70px;
+    color: #132238;
+    margin-bottom: 20px;
+}
+.blog .blog-header p{
+    font-size: 20px;
+    color: #697484;
+    margin-bottom: 50px;
+}
+.blog-header-card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-image{
+    max-width: 350px;
+    box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
+    border-radius: 15px;
+}
+.card-image img{
+    max-width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image p{
+    color: #87909D;
+    padding: 20px 20px 20px;
+    font-size: 17px;
+
+}
