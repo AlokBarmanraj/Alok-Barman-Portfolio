@@ -618,7 +618,7 @@ hr{
       }
       .Skill-header p{
         text-align: center;
-        padding: 5px;
+        padding: 0 5px 20px ;
       }
       .skill-name{
         display: grid;
