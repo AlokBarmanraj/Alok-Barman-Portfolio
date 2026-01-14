@@ -64,7 +64,7 @@ header{
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
-    margin: 50px auto 90px ;
+    margin: 50px auto 90px;
     align-items: center;
     background-color: white;
 
@@ -221,7 +221,8 @@ header{
     color: #697484;
 }
 .work-process-card{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 .card-icon{
@@ -539,8 +540,8 @@ hr{
 
 
 /* Responsive Design */
-/* Small smartphone (0–480px) */
-@media screen and (max-width: 480px) {
+/* Small smartphone (767px) */
+@media screen and (max-width: 767px) {
     /* Navbar */
     header{
         position: relative;
@@ -639,7 +640,8 @@ hr{
         padding: 0 5px 35px;
       }
       .work-process-card{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
       }
 
@@ -718,16 +720,215 @@ hr{
       .footer-menu{
         flex-direction: column;
       }
-
-      /* Discuss your Project */
 }
 
+/* Tablet or Larger Smartphone (768px-1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-/* Tablet or Larger Smartphone (481px-768px) */
+    /* Navbar */
+       header{
+        position: relative;
+       }
+       .Navigation-Section{
+        flex-direction: column;
+       }
+       .Navigation-Section ul{
+        flex-direction: column;
+       }
 
+           /* Hero Section */
+     .hero-section{
+        margin: 50px auto 0;
+     }
+     #hero-header{
+      max-width: 500px;
+     }
+     #hero-header h1{
+        font-size: 60px;
+     }
+      #hero-header p{
+        text-align: justify;
+        padding: 5px;
+      }
+      .hero-img img{
+        width: 400px;
+        vertical-align: middle;
+        box-shadow: none;
+      }
 
-/* Laptop or Larger Tablet (769px-1279px) */
+      /* Professional User Experience Designer */
+      .professional{
+        padding: 30px 0;
+        margin-bottom: 0;
+      }
+      .experience-designer{
+        max-width: 100%;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .experience{
+        padding: 40px 0 0 0;
+      }
+      .experience img{
+        max-width: 100%;
+      }
+      .experience-header{
+        max-width: 100%;
+        box-shadow: none;
+      }
+      .experience-header h2{
+        text-align: center;
+        padding: 70px 0 0;
+      }
+      .experience-header p{
+        text-align: justify;
+        padding: 5px;
+      }
+      .btn-section-00{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
 
+      /* My Skill */
+      #my-skill-bgc{
+        margin: 90px 0 0;
+      }
+      .Skill-header h1{
+        text-align: center;
+      }
+      .Skill-header p{
+        text-align: center;
+        padding: 0 5px 20px ;
+      }
+      .skill-name{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      /* Work Process */
+      .work-process{
+        flex-direction: column;
+        padding: 70px 0 30px;
+      }
+      .work-process-header h2{
+        text-align: center;
+        font-size: 40px;
+      }
+      .work-process-header p{
+        text-align: justify;
+        padding: 0 5px 35px;
+      }
+      .work-process-card{
+        gap: 10px;
+      }
+
+      /* portfolio */
+      .portfolio{
+        margin: 0 0 70px;
+      }
+      .portfolio-header h1{
+        font-size: 60px;
+        margin-top: -40px;
+      }
+      .portfolio-header p{
+        margin-bottom: 20px;
+      }
+      .portfolio-card-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5px 20px;
+      }
+
+      /* Projerct Idea */
+      .projerct-idea{
+        padding: 60px  0;
+      }
+      .projerct-header h1{
+        font-size: 35px;
+      }
+
+      /* Blog */
+      .blog{
+       margin: 0 auto 60px; 
+      }
+      .blog-header h1{
+        font-size: 60px;
+      }
+      .blog-header-card-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5px;
+      }
+
+      /* What I Do */
+      .what-i{
+        flex-direction: column;
+        padding: 70px 0 40px;
+        gap: 30px;
+      }
+      .what-i-header h1{
+        text-align: center;
+      }
+      .what-i-header p{
+        text-align: justify;
+        padding: 0 5px;
+      }
+      .desgin-system{
+        margin: 0 5px;
+      }
+
+       /* Discuss your Project */
+      .discuss-project{
+        flex-direction: column;
+        margin: 0px  auto 20px;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 90px 50px 40px;
+        gap: 0;
+      }
+      .discuss-header h1{
+        font-size: 40px;
+      }
+      .from-info{
+        padding: 30px 0 0;
+      }
+      
+      /* Footer */
+      .footer-menu{
+        flex-direction: column;
+      }
+}
+
+/* Laptop or Larger Tablet (1025px-1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+      /* Hero Section */
+      .hero-section{
+        margin: 50px auto 0px ;
+      }
+      #hero-header h1{
+        font-size: 70px;
+      }
+      .hero-img img{
+        width: 450px;
+        box-shadow: none;
+      }
+
+      /* Work Process */
+      .work-process{
+        flex-direction: column;
+      }
+      .work-process-header h2{
+        text-align: center;
+      }
+      .work-process-header p{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+}     
 
 /* Desktop Device (1280px-1500px) */
 /* @media screen and (max-width: 1280px) {
