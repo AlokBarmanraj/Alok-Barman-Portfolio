@@ -69,21 +69,21 @@ header{
     background-color: white;
 
 }
-.hero-section #hero-header{
+#hero-header{
     max-width:800px ;
 }
-.hero-section #hero-header h1{
+#hero-header h1{
     font-size: 80px;
     font-weight: bold;
     color: #132238;
     margin-bottom: 20px;
 }
-.hero-section #hero-header p{
+#hero-header p{
     font-size: 20px;
     color: #556070;
     margin-bottom: 20px;
 }
-.hero-section .hero-img img{
+.hero-img img{
     width: 530px;
     vertical-align: middle;
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
@@ -106,16 +106,16 @@ header{
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
     border-radius: 15px;
 }
-.experience-designer .experience{
+.experience{
     padding: 70px 120px 130px 120px;
 }
-.experience-designer .experience img{
+.experience img{
     max-width: 350px;
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
     border-radius: 15px;
     background-color: #adbfda;
 }
-.experience-designer .experience .fa-icon{
+.fa-icon{
     text-align: center;
     font-size: 25px;
     color: #004AAD;
@@ -124,15 +124,15 @@ header{
 .fa-icon i:hover{
     color: #1791C8;
 }
-.experience-designer .experience-header{
+.experience-header{
     max-width: 800px;
 }
-.experience-designer .experience-header h2{
+.experience-header h2{
     font-size: 40px;
     margin-bottom: 20px;
     color: #132238;
 }
-.experience-designer .experience-header p{
+.experience-header p{
     font-size: 20px;
     color: #556070;
     margin-bottom: 20px;
@@ -163,25 +163,32 @@ header{
     max-width: 1500px;
     margin: 0 auto  ;
 }
-#my-skill-bgc .my-skill .Skill-header h1{
+.Skill-header h1{
     font-size:60px;
     color: white;
     padding: 50px 0 20px 0;
 }
-#my-skill-bgc .my-skill .Skill-header p{
+.Skill-header p{
     font-size: 20px;
     color: white;
     padding-bottom: 20px;
 }
-#my-skill-bgc .my-skill .skill-name{
-    display: flex;
-    flex-wrap: wrap;
+.skill-name{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-wrap: wrap; */
     gap: 20px;
     padding-bottom: 80px;
+    /* width: 50%; */
 }
-#my-skill-bgc .my-skill .skill-name h2{
+.skill-name div{
+    width: 100%;
+}
+.skill-name h2{
     border :1px solid white;
-    width: 740px;
+    /* width: 740px; */
+    /* width: 100%; */
     border-radius: 15px;
     padding: 10px 5px;
     background-color: white;
@@ -193,7 +200,7 @@ header{
     margin: 0 0 90px;
     background-color: #F0F1F3;
 }
-.work-process-bgc .work-process{
+.work-process{
     max-width: 1500px;
     padding: 70px 0;
     margin: 0 auto;
@@ -201,23 +208,23 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.work-process-bgc .work-process .work-process-header{
+.work-process-header{
     max-width: 550px;
 }
-.work-process-bgc .work-process .work-process-header h2{
+.work-process-header h2{
     font-size: 60px;
     color: #132238;
     margin-bottom: 20px;
 }
-.work-process-bgc .work-process .work-process-header p{
+.work-process-header p{
     font-size: 20px;
     color: #697484;
 }
-.work-process-bgc .work-process .work-process-card{
+.work-process-card{
     display: flex;
     gap: 20px;
 }
-.work-process-bgc .work-process .work-process-card .card-icon{
+.card-icon{
     max-width: 40px;
     text-align: center;
     padding: 5px;
@@ -226,16 +233,16 @@ header{
     color: rgb(220, 217, 217);
     margin-bottom: 20px;
 }
-.work-process-bgc .work-process .work-process-card h3{
+.work-process-card h3{
     font-size: 30px;
     color: #132238;
     margin-bottom: 20px;
 }
-.work-process-bgc .work-process .work-process-card p{
+.work-process-card p{
     font-size: 17px;
     color: #556070;
 }
-.work-process-bgc .work-process .work-process-card .card{
+.card{
     max-width: 400px;
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
     border-radius: 15px;
@@ -249,66 +256,67 @@ header{
     max-width: 1500px;
     margin: 0 auto 90px;
 }
-.portfolio .portfolio-header{
+.portfolio-header{
     text-align: center;
 }
-.portfolio .portfolio-header h1{
+.portfolio-header h1{
     font-size: 70px;
     color: #132238;
     margin-bottom: 20px;
 }
-.portfolio .portfolio-header p{
+.portfolio-header p{
     font-size: 20px;
     color: #87909D;
     margin-bottom: 70px;
 }
-.portfolio .portfolio-card-list{
-    display: flex;
-    flex-wrap: wrap;
+.portfolio-card-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding-bottom: 40px;
 }
-.portfolio .portfolio-card-list .design-card{
-    max-width: 480px;
+.design-card{
+    max-width: 100%;
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
     border-radius: 15px;
 }
-.portfolio .portfolio-card-list .design-card img{
-    max-width: 480px;
+.design-card img{
+    max-width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.portfolio .portfolio-card-list .design-card .design-card-header{
+.design-card-header{
     padding: 20px 10px 30px 20px;
 }
-.portfolio .portfolio-card-list .design-card .design-card-header h3{
+.design-card-header h3{
     font-size: 25px;
     color: #132238;
     margin-bottom: 20px;
 }
-.portfolio .portfolio-card-list .design-card .design-card-header p {
+.design-card-header p {
     font-size: 17px;
     color: #556070;
     margin-bottom: 20px;
 }
 
 
-/* Projerct Discuss */
+/* Projerct Idea */
 .design-card-btn{
 text-align: center;
 }
-.projerct-discuss{
+.projerct-idea{
    margin-bottom: 90px;
    background-color: #132238;
    text-align: center;
    padding: 60px 0 60px 0;
 }
-.projerct-discuss .discuss-header h1{
-    font-size: 70px;
+.projerct-header h1{
+    font-size: 50px;
+    font-weight: bold;
     color: white;
     margin-bottom: 20px;
 }
-.projerct-discuss .discuss-header p{
+.projerct-header p{
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
@@ -320,31 +328,31 @@ text-align: center;
     max-width: 1500px;
     margin: 0 auto 90px;
 }
-.blog .blog-header{
+.blog-header{
     text-align: center;
 }
-.blog .blog-header h1{
+.blog-header h1{
     font-size: 70px;
     color: #132238;
     margin-bottom: 20px;
 }
-.blog .blog-header p{
+.blog-header p{
     font-size: 20px;
     color: #697484;
     margin-bottom: 50px;
 }
 .blog-header-card-list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 .card-image{
-    max-width: 350px;
+    max-width: 100%;
     box-shadow: 0px 10px 10px 10px rgb(218, 217, 217);
     border-radius: 15px;
 }
 .card-image img{
-    max-width: 350px;
+    max-width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -449,7 +457,7 @@ text-align: center;
     margin-bottom: 30px;
 }
 .from-info input{
-    width: 650px;
+    width: 100%;
     height: 40px;
     border: 2px solid black;
     border-radius: 5px;
@@ -520,3 +528,212 @@ hr{
     text-align: center;
     color: white;
 }
+
+
+
+.hight{
+    display: none;
+}
+
+
+
+
+/* Responsive Design */
+/* Small smartphone (0–480px) */
+@media screen and (max-width: 480px) {
+    /* Navbar */
+    header{
+        position: relative;
+    }
+   .Navigation-Section{
+    flex-direction: column;
+    padding-bottom: 25px;
+    } 
+    .Navigation-Section ul{
+    flex-direction: column;
+    }
+
+    /* Hero Section */
+     .hero-section{
+        flex-direction: column;
+     }
+     #hero-header h1{
+        text-align: center;
+     }
+      #hero-header p{
+        text-align: justify;
+        padding: 5px;
+      }
+      .btn-section-00{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .hero-img img{
+        width: 100%;
+        vertical-align: middle;
+        box-shadow: none;
+      }
+
+      /* Professional User Experience Designer */
+      .professional{
+        padding: 0 ;
+        margin-bottom: 0;
+      }
+      .experience-designer{
+        max-width: 100%;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .experience{
+        padding: 40px 0 0 0;
+      }
+      .experience img{
+        max-width: 100%;
+      }
+      .experience-header{
+        max-width: 100%;
+        box-shadow: none;
+      }
+      .experience-header h2{
+        text-align: center;
+      }
+      .experience-header p{
+        text-align: justify;
+        padding: 5px;
+      }
+
+      /* My Skill */
+      #my-skill-bgc{
+        margin: 90px 0 0;
+      }
+      .Skill-header h1{
+        text-align: center;
+      }
+      .Skill-header p{
+        text-align: center;
+        padding: 5px;
+      }
+      .skill-name{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      /* Work Process */
+      .work-process{
+        flex-direction: column;
+        padding: 70px 0 30px;
+      }
+      .work-process-header h2{
+        text-align: center;
+      }
+      .work-process-header p{
+        text-align: justify;
+        padding: 0 5px 35px;
+      }
+      .work-process-card{
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      /* portfolio */
+      .portfolio{
+        margin: 0 0 70px;
+      }
+      .portfolio-header h1{
+        margin-top: -40px;
+      }
+      .portfolio-header p{
+        margin-bottom: 20px;
+      }
+      .portfolio-card-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5px 20px;
+      }
+
+      /* Projerct Idea */
+      .projerct-idea{
+        padding: 60px  0;
+      }
+
+      /* Blog */
+      .blog{
+       margin: 0 auto 60px; 
+      }
+      .blog-header-card-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5px;
+      }
+
+      /* What I Do */
+      .what-i{
+        flex-direction: column;
+        padding: 70px 0 40px;
+        gap: 30px;
+      }
+      .what-i-header h1{
+        text-align: center;
+      }
+      .what-i-header p{
+        text-align: justify;
+        padding: 0 5px;
+      }
+      .desgin-system{
+        margin: 0 5px;
+      }
+      .discuss-project{
+        flex-direction: column;
+        margin: 0px  auto 20px;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 90px 50px 40px;
+        gap: 0;
+      }
+      .from-info{
+        padding: 30px 0 0;
+      }
+      
+      /* Footer */
+      .footer-menu{
+        flex-direction: column;
+      }
+
+      /* Discuss your Project */
+}
+
+
+/* Tablet or Larger Smartphone (481px-768px) */
+
+
+/* Laptop or Larger Tablet (769px-1279px) */
+
+
+/* Desktop Device (1280px-1500px) */
+/* @media screen and (max-width: 1280px) {
+    .design-card{
+    max-width: 100%;
+}
+    .design-card img{
+    max-width: 100%;
+}
+} */
+
+
+
+
+/* 
+Extra Small Mobile (Portrait): 320px – 480px
+Small Mobile (Landscape): 481px – 600px
+
+Small Tablets (Portrait): 601px – 768px
+Large Tablets (Landscape): 769px – 1024px
+
+Small Desktops and Laptops: 1025px – 1280px
+Large Desktops and High-Resolution Screens: 1281px – 1440px
+
+Extra-Large Desktops: 1441px and up */
