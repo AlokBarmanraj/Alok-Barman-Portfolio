@@ -559,6 +559,7 @@ hr{
         margin: 50px auto 20px;
      }
      #hero-header h1{
+        font-size: 60px;
         text-align: center;
      }
       #hero-header p{
@@ -646,6 +647,7 @@ hr{
         margin: 0 0 70px;
       }
       .portfolio-header h1{
+        font-size: 60px;
         margin-top: -40px;
       }
       .portfolio-header p{
@@ -661,10 +663,16 @@ hr{
       .projerct-idea{
         padding: 60px  0;
       }
+      .projerct-header h1{
+        font-size: 35px;
+      }
 
       /* Blog */
       .blog{
        margin: 0 auto 60px; 
+      }
+      .blog-header h1{
+        font-size: 60px;
       }
       .blog-header-card-list{
         display: grid;
@@ -688,6 +696,8 @@ hr{
       .desgin-system{
         margin: 0 5px;
       }
+
+       /* Discuss your Project */
       .discuss-project{
         flex-direction: column;
         margin: 0px  auto 20px;
@@ -695,6 +705,9 @@ hr{
         border-radius: 0;
         padding: 90px 50px 40px;
         gap: 0;
+      }
+      .discuss-header h1{
+        font-size: 40px;
       }
       .from-info{
         padding: 30px 0 0;
